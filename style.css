@@ -559,3 +559,205 @@ ion-icon:hover{
         height: 50px;
     }
 }
+@media only screen and (max-width:425px) {
+    .container{
+        width: 150%;
+        height: 150vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    nav{
+        font-size: medium;
+        display: flex;
+        flex-direction: column;
+    }
+    nav:hover ul{
+        display: block;
+    }
+    nav h1{
+        font-size: xx-large;
+    }
+    nav ul{
+        display: none;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .header p{
+        width: 80%;
+    }
+    .header button{
+        width: 30%;
+    }
+    .content{
+        width: 150%;
+        height: 300vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .smart,.lovely,.quick,.setup{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 60%;
+        justify-content:center;
+        align-items: center;
+        row-gap: 10%;
+    }
+    .content img{
+        padding: 6%; 
+        background-color: orange;
+        border: 2px solid white;
+        border-radius: 10%;  
+        animation: none; 
+    }
+    .content hr{
+        width: 82%;
+    }
+    .content h1{
+        font-size: xx-large;
+    }
+    .content p{
+        font-size: large;
+    }
+    .content button{
+        width: 60%;
+        height: auto;
+        padding: 2%;
+        text-align: center; 
+    }
+    .gallery{
+        width: 150%;
+        height: 332vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .pic{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .imges1{
+        background-image: url(./assets/portfolio_big_item_01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+    .imges2{
+        background-image: url(./assets/portfolio_big_item_02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+    .imges3{
+        background-image: url(./assets/portfolio_big_item_03.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+    .imges4{
+        background-image: url(./assets/portfolio_big_item_04.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+    .imges5{
+        background-image: url(./assets/portfolio_big_item_05.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+    .imges6{
+        background-image: url(./assets/portfolio_big_item_06.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+    .our_gallery>hr{
+        margin-top: 2%;
+        width: 60%;
+        margin-bottom: 2%;
+    
+    }
+    .our_gallery h1{
+        margin-top: 5%;
+    }
+    .our_gallery>p{
+        color: whitesmoke;
+        font-size: 100%; 
+    }
+    .our_list{
+     margin-bottom: 5%;
+    }
+    .profolio{
+        width: 150%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .profolio1,.profolio2{
+        width: 40%;
+        height: 50%;
+    }
+    .profolio1{
+        margin-top: 20%;
+    }
+    .profolio2{
+        margin-bottom: 20%;
+    }
+    .blog{
+        width: 150%;
+        height: 150vh;
+    }
+    .blog2{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog2>p{
+        text-align: center;
+    }
+    .blog1>p{
+       text-align: start;
+        font-size: 15px;
+        width:150px;
+        
+    }
+    .contact{
+        width: 150%;
+    }
+    .map{
+        width: 150%;
+        height: 150vh;
+    }
+    iframe{
+        width: 100%;
+        height: 150vh;
+    }
+    .footer{
+        width: 150%;
+    }
+    .about4,.about3{
+        margin-left: 5%;
+    }
+    .about4>ion-icon{
+        font-size: xx-small;
+    }
+}
