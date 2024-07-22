@@ -31,6 +31,8 @@ body{
     grid-template-columns: 3.5fr 6.5fr;
 }
 nav{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.379);
     font-size: larger;
     width: 100%;
     height: 8%;
@@ -41,6 +43,9 @@ nav{
 ul>a{
     text-decoration: none;
    color: white;
+}
+ul li{
+    font-size: medium;
 }
 ul{
     display: flex;
@@ -56,7 +61,7 @@ ul{
     color: whitesmoke;
     transition-property: all;
     transition-duration: 2s;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 h1 span{
     color: orange;
@@ -288,8 +293,12 @@ li>span{
     color: black;
     text-align: center;
     width: 72%;
-    padding: 4%;
-    
+    padding: 4%;  
+}
+.blog_list>li:hover{
+    background-color: gold;
+    color: brown;
+    transform: scale(1.1);
 }
 .blog1>hr{
     margin-top: 5%;
@@ -362,6 +371,7 @@ iframe{
     align-items: center;
     justify-content: center;
     row-gap: 5%;
+    color: white;
 }
 .location1{
     display: flex;
@@ -374,6 +384,7 @@ iframe{
     background-color: whitesmoke;
     font-size:x-large;
     padding: 2%;
+    color: black;
     border-radius: 100%;
 }
 .footer h1{
@@ -381,7 +392,12 @@ iframe{
     font-size: larger;
     align-items: center;
 }
-@media screen and (max-width:768px){
+ion-icon:hover{
+    background-color: gold;
+    color: whitesmoke;
+    font-size: xx-large;
+}
+@media only screen and (max-width:768px){
     .container,.content,.gallery,.profolio,.blog{
         width: 120%;
         height: 120vh;
@@ -482,5 +498,64 @@ iframe{
     }
     .about3{
         margin-left: 30px;
+    }
+}
+@media  only screen and (max-width:1024px){
+    .container,.content,.gallery,.profolio,.blog,.map{
+       width:110%;
+       height: 110vh;
+    }
+    .header>button{
+        font-size: medium;
+        width: 15%;
+        height: 6%;
+        border-radius: 40px;
+    }
+    .smart,.lovely,.quick,.setup{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 23%;
+        justify-content:center;
+        align-items: center;
+        row-gap: 5%;
+        text-align: center;
+    }
+    .blog3>img{
+        width: 100%;
+    }
+    .blog2{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 50%;
+        margin-top: 5%;
+        margin-left: 5%;
+        background: none;
+    }
+    .blog3>p{
+        padding: 1% 2%;
+        background-color: white;
+        border: none;
+    }
+    .blog3>h1{
+        background-color: white;
+        border: none;
+    }
+    .blog1>p{
+        align-items: center;
+        font-size: 15px;
+        
+    }
+    iframe{
+        width: 100%;
+        height: 110vh;
+    }
+    .contact,.footer{
+        width: 110%;
+    }
+    .contact button{
+        width: 180px;
+        height: 50px;
     }
 }
