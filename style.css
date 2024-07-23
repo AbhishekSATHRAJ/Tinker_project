@@ -485,8 +485,15 @@ ion-icon:hover{
         width: 120%;
     }
     .contact button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 180px;
         height: 50px;
+    }
+    .contact>hr{
+        width: 50%;
     }
     .map{
         width: 120%;
@@ -498,6 +505,9 @@ ion-icon:hover{
     }
     .about3{
         margin-left: 30px;
+    }
+    .profolio1,.profolio2{
+        width:30%
     }
 }
 @media  only screen and (max-width:1024px){
@@ -554,6 +564,12 @@ ion-icon:hover{
     .contact,.footer{
         width: 110%;
     }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .contact button{
         width: 180px;
         height: 50px;
@@ -596,7 +612,7 @@ ion-icon:hover{
     }
     .content{
         width: 150%;
-        height: 300vh;
+        height: 200vh;
         display: flex;
         flex-direction: column;
     }
@@ -634,15 +650,15 @@ ion-icon:hover{
         text-align: center; 
     }
     .gallery{
-        width: 150%;
-        height: 333vh;
+        width: 150%;   
+        height: 300%;     
         display: flex;
         flex-direction: column;
     }
     .pic{
-        display: flex;
+        display: flex; 
         flex-direction: column;
-        row-gap: 30px;
+        row-gap: 30px;   
     }
     .imges1{
         background-image: url(./assets/portfolio_big_item_01.jpg);
@@ -767,5 +783,18 @@ ion-icon:hover{
     .about4>ion-icon{
         font-size: xx-small;
     }
+   
+}
+@media only screen and (min-width:375px) {
+    .content{
+        height: 300%;
+    }
+    .footer{
+        size: 20px;
+    }
+    .about4>ion-icon{
+        font-size: 10px;
+    }
+    
 }
 
